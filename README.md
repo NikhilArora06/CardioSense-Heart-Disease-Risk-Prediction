@@ -47,10 +47,57 @@ The data comes from the UCI Machine Learning Repository and contains 14 total co
 ### The Target Variable:
 * **Target:** 1 = heart disease present, 0 = healthy (no heart disease
 
+
+## Installation & Setup
+
+### Clone repository
+
+```bash
+git clone https://github.com/NikhilArora06/CardioSense-Heart-Disease-Risk-Prediction
+cd CardioSense
+```
+
+### Create virtual environment
+
+```bash
+python -m venv .venv
+```
+
+### Activate environment
+
+**Windows**
+
+```bash
+.\.venv\Scripts\activate
+```
+
+**Mac/Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+### Install dependencies
+
+```bash
+pip install -e .
+```
+
+This command:
+
+- installs dependencies from `requirements.txt`
+- installs CardioSense in editable mode
+- creates package metadata (`CardioSense.egg-info`)
+
+---
+
 ## Repository Structure
 
-```text
-├── cleveland_heart_disease.csv   # The raw UCI data
-├── cardiosense_evaluation.ipynb  # My full code (EDA, training, and tuning)
+CardioSense/
+│
+├── .gitignore
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+├── setup.py
+├── cardiosense_evaluation.ipynb
+├── cleveland_heart_disease.csv
